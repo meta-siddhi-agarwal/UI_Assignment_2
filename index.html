@@ -4,51 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MetaCube Parking System</title>
+
 </head>
 
 <body>
     <form>
+        <!-- <h2>Star Rating</h2> -->
+        <!-- <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span> -->
+        <!-- <span class="fa fa-star"></span>
+<span class="fa fa-star"></span> -->
         <div>
 
-            <h1 style="text-align: center;">METACUBE PARKING SYSTEM</h1>
+            <h1 style="text-align: center;">METAPARK</h1>
             <div>
                 <nav>
-                    <!-- <ul> -->
-                        <a href="">Add Employee</a>
-                        <br>
-                        <a href="">Add Vehicle</a>
-                        <br>
-                        <a href="">Give feedback</a>
-                        <br>
-                        <a href="">Pricing</a>
-                        <br>
-<!-- 
-                        <li>Add Vehicle</li>
-                        <li>Give feedback</li>
-                        <li>Pricing</li> -->
-
-                    <!-- </ul>> -->
-                       
-                    
-<!--                    
-                    Add Employee
-                </nav>
-                <nav>
-                    Add Vehicle
-                </nav>
-                <nav>
-                    Give feedback
-                </nav>
-                <nav>
-                    Pricing
-                </nav> -->
+                   
+                    <a href="#addEmp"  >Add Employee</a>
+                    <br>
+                    <a href="#addVehicle" >Add Vehicle</a>
+                    <br>
+                    <a href="#giveFeedback" >Give feedback</a>
+                    <br>
+                    <a href="#seePrice">Pricing</a>
+                    <br>
+                   
             </div>
 
         </div>
-        <img src="https://www.multi-line.com.ph/wp-content/uploads/2022/01/parking-system.jpeg" alt="Parking system">
+        <img src="https://www.multi-line.com.ph/wp-content/uploads/2022/01/parking-system.jpeg" alt="Parking system"
+        width="1220px" style="padding: 29px;">
 
-        <div style="display: grid">
+        <div style="display: grid" id="addEmp">
             EMPLOYEE DETAILS
             <div style="display: inline;">
                 <label>Enter your name</label>
@@ -58,8 +49,8 @@
             <div style="display: inline">
                 <label>Select Gender</label>
                 <input type="radio" name="Gender">Male</input>
-                <input type="radio" value="Gender">Female</input>
-                <input type="radio" value="Gender">Others</input>
+                <input type="radio" name="Gender">Female</input>
+                <input type="radio" name="Gender">Others</input>
             </div>
 
             <div style="display: inline;">
@@ -70,14 +61,14 @@
 
             <div>
                 <label>Enter password</label>
-                <input type="password">
+                <input type="password" minlength="8">
 
 
             </div>
 
             <div>
                 <label>Confirm password</label>
-                <input type="password">
+                <input type="password" minlength="8">
 
 
             </div>
@@ -94,8 +85,8 @@
 
 
 
-<br>
-        <div style="display: grid">
+        <br>
+        <div style="display: grid" id="addVehicle">
             VEHICLE DETAILS
             <div style="display: inline;">
                 <label>Enter company name of the vehicle</label>
@@ -109,14 +100,14 @@
 
             <div style="display: inline">
                 <label>Select vehicle type</label>
-                <select >
+                <select>
                     <option>Car</option>
                     <option>Bike</option>
                     <option>Cycle</option>
-                    
+
 
                 </select>
-               
+
             </div>
 
             <div style="display: inline;">
@@ -133,41 +124,152 @@
 
         <div>
             <label>Enter identification</label>
-            <textarea></textarea>
-            
+            <textarea placeholder="Color, mark, visible accessory etc."></textarea>
+
         </div>
         <br>
 
-        <div style="display: block;">
+
+
+        <div style="display: block;" id="giveFeedback">
             GIVE FEEDBACK
-            
-                <div style="display: grid;">
-                    <label>Enter your name</label>
-               
+
+            <div style="display: grid;">
+                <label>Enter your name</label>
+
                 <input type="text">
 
-                </div>
-
-                <div style="display: grid;">
-                    <label>Enter your email</label>
-                    <input type="text">
-                </div>
-                
-                <div style="display: grid;">
-                    <label>Enter your phone</label>
-                    <input type="text">
-                </div>
-<div style="display: grid;">
-    <label>Rate our service</label>
-</div>
-              
-               <div style="display: grid;">
-                <label>Add comments</label>
-              <textarea></textarea>
-               </div>
-               
-         
             </div>
+
+            <div style="display: grid;">
+                <label>Enter your email</label>
+                <input type="text">
+            </div>
+
+            <div style="display: grid;">
+                <label>Enter your phone</label>
+                <input type="text">
+            </div>
+            <div style="display: grid;">
+                <label>Rate our service</label>
+                <select>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Neutral</option>
+                    <option>Poor</option>
+                    <option>Terrible</option>
+                </select>
+            </div>
+
+            <div style="display: grid;">
+                <label>Add comments</label>
+                <textarea></textarea>
+            </div>
+
+
+        </div>
+
+
+
+<br>
+
+    <!--
+        
+    Pricing section-->
+
+    <!-- <svg width="500" height="200">
+        <rect  width="500" height="200" style="fill:white;stroke:black;stroke-width:5;opacity:0.5" />
+        <title>mdskmf</title>
+        
+      </svg> -->
+
+
+     
+
+
+
+
+      
+      <!-- <svg width="400" height="100">
+        <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+        Sorry, your browser does not support inline SVG.
+      </svg> -->
+
+      
+<div style="display: inline-block;" id="seePrice">
+
+    <div style="display: inline-grid; align-items: start; border-style: solid; padding: 10px;" >
+        <h2 style="align-items: center;">Cycle</h2>
+        <svg width="200" height="150">
+            <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white" >
+                
+                
+            </circle>
+            <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$100</text>
+            <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
+          </svg>
+       
+          <h3>$5 Daily</h3>
+          <h3>$100 Monthly</h3>
+          <h3>$500 Yearly</h3>
+          
+          <div style="display: grid; align-items: end; border-style: solid; padding: 10px;" >
+            PURCHASE NOW
+          </div>
+    </div>
+
+
+
+
+    <div style="display: inline-grid; align-items: center; border-style: solid; padding: 10px;" >
+        <h2 style="align-items: center;">MotorCycle</h2>
+        <svg width="200" height="150">
+            <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white" >
+             
+                
+            </circle>
+            <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$200</text>
+            <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
+          </svg>
+       
+          <h3>$10 Daily</h3>
+          <h3>$200 Monthly</h3>
+          <h3>$1000 Yearly</h3>
+          
+          <div style="display: grid; align-items: end; border-style: solid; padding: 10px;" >
+            PURCHASE NOW
+          </div>
+    </div>
+
+
+
+    <div style="display: inline-grid; align-items: end; border-style: solid; padding: 10px;" >
+        <h2 style="align-items: center;">Four Wheelers</h2>
+        <svg width="200" height="150">
+            <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white" >
+                
+                
+            </circle>
+            <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$500</text>
+            <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
+          </svg>
+       
+          <h3>$20 Daily</h3>
+          <h3>$500 Monthly</h3>
+          <h3>$3500 Yearly</h3>
+          
+          <div style="display: grid; align-items: end; border-style: solid; padding: 10px;" >
+            PURCHASE NOW
+          </div>
+    </div>
+
+</div>
+
+
+
+
+    
+
         </div>
     </form>
 
