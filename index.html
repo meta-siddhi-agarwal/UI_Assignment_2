@@ -1,279 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>MetaCube Parking System</title>
-
-</head>
-
-<body>
-    <form>
-        <!-- <h2>Star Rating</h2> -->
-        <!-- <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span> -->
-        <!-- <span class="fa fa-star"></span>
-<span class="fa fa-star"></span> -->
-        <div>
-
-            <h1 style="text-align: center;">METAPARK</h1>
-            <div>
-                <nav>
-                   
-                    <a href="#addEmp"  >Add Employee</a>
-                    <br>
-                    <a href="#addVehicle" >Add Vehicle</a>
-                    <br>
-                    <a href="#giveFeedback" >Give feedback</a>
-                    <br>
-                    <a href="#seePrice">Pricing</a>
-                    <br>
-                   
-            </div>
-
-        </div>
-        <img src="https://www.multi-line.com.ph/wp-content/uploads/2022/01/parking-system.jpeg" alt="Parking system"
-        width="1220px" style="padding: 29px;">
-
-        <div style="display: grid" id="addEmp">
-            EMPLOYEE DETAILS
-            <div style="display: inline;">
-                <label>Enter your name</label>
-                <input type="text">
-            </div>
-
-            <div style="display: inline">
-                <label>Select Gender</label>
-                <input type="radio" name="Gender">Male</input>
-                <input type="radio" name="Gender">Female</input>
-                <input type="radio" name="Gender">Others</input>
-            </div>
-
-            <div style="display: inline;">
-                <label>Enter email</label>
-                <input type="text">
-
-            </div>
-
-            <div>
-                <label>Enter password</label>
-                <input type="password" minlength="8">
-
-
-            </div>
-
-            <div>
-                <label>Confirm password</label>
-                <input type="password" minlength="8">
-
-
-            </div>
-            <div>
-                <label>Enter contact no.</label>
-                <input type="text">
-
-
-            </div>
-
-
-
-        </div>
-
-
-
-        <br>
-        <div style="display: grid" id="addVehicle">
-            VEHICLE DETAILS
-            <div style="display: inline;">
-                <label>Enter company name of the vehicle</label>
-                <input type="text">
-            </div>
-
-            <div style="display: inline;">
-                <label>Enter company model of the vehicle</label>
-                <input type="text">
-            </div>
-
-            <div style="display: inline">
-                <label>Select vehicle type</label>
-                <select>
-                    <option>Car</option>
-                    <option>Bike</option>
-                    <option>Cycle</option>
-
-
-                </select>
-
-            </div>
-
-            <div style="display: inline;">
-                <label>Enter vehicle number</label>
-                <input type="text">
-
-            </div>
-
-            <div>
-                <label>Enter employee id</label>
-                <input type="text">
-            </div>
-        </div>
-
-        <div>
-            <label>Enter identification</label>
-            <textarea placeholder="Color, mark, visible accessory etc."></textarea>
-
-        </div>
-        <br>
-
-
-
-        <div style="display: block;" id="giveFeedback">
-            GIVE FEEDBACK
-
-            <div style="display: grid;">
-                <label>Enter your name</label>
-
-                <input type="text">
-
-            </div>
-
-            <div style="display: grid;">
-                <label>Enter your email</label>
-                <input type="text">
-            </div>
-
-            <div style="display: grid;">
-                <label>Enter your phone</label>
-                <input type="text">
-            </div>
-            <div style="display: grid;">
-                <label>Rate our service</label>
-                <select>
-                    <option>Excellent</option>
-                    <option>Good</option>
-                    <option>Neutral</option>
-                    <option>Poor</option>
-                    <option>Terrible</option>
-                </select>
-            </div>
-
-            <div style="display: grid;">
-                <label>Add comments</label>
-                <textarea></textarea>
-            </div>
-
-
-        </div>
-
-
-
-<br>
-
-    <!--
-        
-    Pricing section-->
-
-    <!-- <svg width="500" height="200">
-        <rect  width="500" height="200" style="fill:white;stroke:black;stroke-width:5;opacity:0.5" />
-        <title>mdskmf</title>
-        
-      </svg> -->
-
-
-     
-
-
-
-
-      
-      <!-- <svg width="400" height="100">
-        <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
-        Sorry, your browser does not support inline SVG.
-      </svg> -->
-
-      
-<div style="display: inline-block;" id="seePrice">
-
-    <div style="display: inline-grid; align-items: start; border-style: solid; padding: 10px;" >
-        <h2 style="align-items: center;">Cycle</h2>
-        <svg width="200" height="150">
-            <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white" >
-                
-                
-            </circle>
-            <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$100</text>
-            <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
-          </svg>
-       
-          <h3>$5 Daily</h3>
-          <h3>$100 Monthly</h3>
-          <h3>$500 Yearly</h3>
-          
-          <div style="display: grid; align-items: end; border-style: solid; padding: 10px;" >
-            PURCHASE NOW
-          </div>
+    <head>
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Navigation Bar-->
+    <div id="header">
+        <nav id="navbar">
+            <img src="images\logo.png" alt="Logo of parking system" width="200px">
+            <ul>
+                <li><a href="#add_employee">Add Employee</a></li>
+                <li><a href="#add_vehicle">Add Vehicle</a></li>
+                <li><a href="#give_feedback">Give Feedback</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
     </div>
+        <!--Cover image-->
+        <!--Add Employee Section-->
+        <details>
+            <summary>Employee Details Form</summary>
+        <section id="add_employee">
+            <div id="employee_form">
+                <h2>Employee Details Form</h2>
+                <!--Add Employee Form-->
+                <form>
+                    <label for="name">Full Name : </label><br>
+                    <input type="text" id="name" name = "name" pattern="[A-Za-z\s]+" title="Name should contain only alphabets and spaces" required><br><br>
 
+                    <label>Gender : </label><br>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label><br><br>
 
+                    <label for="email">Email : </label><br>
+                    <input type="email" id="email" name="email" required><br><br>
 
+                    <label for="password">Password : </label><br>
+                    <input type="password" id="password" name="password" required><br><br>
 
-    <div style="display: inline-grid; align-items: center; border-style: solid; padding: 10px;" >
-        <h2 style="align-items: center;">MotorCycle</h2>
-        <svg width="200" height="150">
-            <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white" >
-             
-                
-            </circle>
-            <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$200</text>
-            <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
-          </svg>
-       
-          <h3>$10 Daily</h3>
-          <h3>$200 Monthly</h3>
-          <h3>$1000 Yearly</h3>
-          
-          <div style="display: grid; align-items: end; border-style: solid; padding: 10px;" >
-            PURCHASE NOW
-          </div>
-    </div>
+                    <label for="confirm_password">Confirm Password : </label><br>
+                    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
 
+                    <label for="contact_no">Contact Number : </label><br>
+                    <input type="number" id="contact_no" name="contact_no" pattern="[6-9]{1}[0-9]{9}" title="Contact number is invalid" required><br><br>
 
+                    <input type="submit" value="Add Employee">
+                </form>
+            </div>
+            <div id="employee_photo">
+                <img src="images/employees.jpg" alt="Employee Form image">
+            </div>
+        </section>
+    </details>
 
-    <div style="display: inline-grid; align-items: end; border-style: solid; padding: 10px;" >
-        <h2 style="align-items: center;">Four Wheelers</h2>
-        <svg width="200" height="150">
-            <circle cx="65" cy="65" r="50" stroke="blue" stroke-width="4" fill="white" >
-                
-                
-            </circle>
-            <text fill="#000000" font-size="30" font-family="Verdana" x="20" y="60">$500</text>
-            <text fill="#000000" font-size="20" font-family="Verdana" x="20" y="85">/month</text>
-          </svg>
-       
-          <h3>$20 Daily</h3>
-          <h3>$500 Monthly</h3>
-          <h3>$3500 Yearly</h3>
-          
-          <div style="display: grid; align-items: end; border-style: solid; padding: 10px;" >
-            PURCHASE NOW
-          </div>
-    </div>
+        <!--Add Vehicle Section-->
+        <details>
+            <summary>Vehicle Details Form</summary>
+        <section id="add_vehicle">
+            <div id="vehicle_photo">
+                <img src="images/vehicle.jpg" alt="Vehicle Form image" width="600px" height="300px">
+            </div>
+            <div id="vehicle_form">
+                <h2>Vehicle Details Form</h2>
+                <!--Add Vehicle Form-->
+                <form>
+                    <label for="company">Company : </label><br>
+                    <input type="text" id="company" name="company" pattern="[A-Za-z\s]+" title="Company name cannot contain symbols and numbers" required><br><br>
 
-</div>
+                    <label for="model">Model : </label><br>
+                    <input type="text" id="model" name="model" required><br><br>
 
+                    <label for="type">Type : </label><br>
+                    <select name="type" id="type" required>
+                        <option value="Cycle">Cycle</option>
+                        <option value="Motorcycle">MotorCycle</option>
+                        <option value="Four Wheeler">Four Wheeler</option>
+                    </select><br><br>
 
+                    <label for="VehicleNo">Vehicle Number : </label><br>
+                    <input type="text" id="VehicleNo" name="VehicleNo" pattern="[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}" title="Invalid vehicle number" required><br><br>
 
+                    <label for="empId">Employee ID : </label><br>
+                    <input type="number" id="empId" name="empId" required><br><br>
 
-    
+                    <label for="identification">Identifications : </label><br>
+                    <textarea name="identification" id="identification" placeholder="vehicle-color, mark, visible accessories etc" required></textarea><br><br>
 
-        </div>
-    </form>
+                    <input type="submit" value="Add Vehicle">
+                </form>
+            </div>
+        </section>
+        </details>
 
+        <details>
+            <summary>Feedback Form</summary>
+        <section id="give_feedback">
+            <div id="feedback_form">
+                <h2>Feedback Form</h2>
+                <!--Feedback form-->
+                <form>
+                    <label for="emp_id">Employee ID : </label><br>
+                    <input type="number" id="emp_id" name="emp_id" required><br><br>
 
-</body>
+                    <label for="email">Email : </label><br>
+                    <input type="email" id="email" name="email" required><br><br>
 
+                    <label for="feedback">Feedback : </label><br>
+                    <textarea name="feedback" id="feedback" placeholder="How was your experience?" required></textarea><br><br>
+
+                    <label for="suggestion">Suggestions : </label><br>
+                    <textarea name="suggestion" id="suggestion" placeholder="Any suggestions for improvement"></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div id="feedback_photo">
+                <img src="images/feedback.jpg" alt="Feedback Form image" width="500px" height="300px">
+            </div>
+        </section>
+        </details>
+
+        <!--Pricing section-->
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <div id="pricing_sections">
+            <!--Cycle pricing section-->
+                <section id="cycle">
+                    <h3>Cycle</h3>
+                    <div class="purchase_plan">
+                        <b>Rs.100</b>
+                        /month
+                    </div>
+                    <p>
+                        Rs.5 Daily<br>
+                        Rs.100 Monthly<br>
+                        Rs.500 Yearly
+                    </p>
+                    <button>Purchase Now</button>
+                </section>
+                <!--MotorCycle pricing section-->
+                <section id="motorcycle">
+                    <h3>MotorCycle</h3>
+                    <div class="purchase_plan">
+                        <b>Rs.200</b>
+                        /month
+                    </div>
+                    <p>
+                        Rs.10 Daily<br>
+                        Rs.200 Monthly<br>
+                        Rs.1000 Yearly
+                    </p>
+                    <button>Purchase Now</button>
+                </section>
+                <!--Four Wheeler pricing section-->
+                <section id="fourwheeler">
+                    <h3>Four Wheeler</h3>
+                    <div class="purchase_plan">
+                        <b>Rs.500</b>
+                        /month
+                    </div>
+                    <p>
+                        Rs.20 Daily<br>
+                        Rs.500 Monthly<br>
+                        Rs.3500 Yearly
+                    </p>
+                    <button>Purchase Now</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+        <footer>
+            <p><strong>Metacube Parking System</strong></p>
+            <p>© 2025 Metacube Technologies. All Rights Reserved.</p>
+            <p>
+                <a href="mailto:info@metacubeparking.com">Contact Us</a> | 
+                +91 9123456780
+            </p>
+        </footer>    
+    </body>
 </html>
